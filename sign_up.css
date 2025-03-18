@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+
+.image svg {
+    height: 70%;
+    width: 45%;
+}
+
+main {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+main h1 {
+    margin-top: 3rem;
+    padding: 0.9rem;
+    font-size:400%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main h2 {
+    margin-top: 3rem;
+    padding: 0.9rem;
+    font-size:170%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+    margin: 5px;
+    padding: 20px;
+}
+
+.img img {
+    height: 20px;
+    width: 20px;
+}
+
+.goo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* General button styles */
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Google button */
+#Google {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+#Google:hover {
+    background-color: #f7f7f7;
+    border-color: #bbb;
+}
+
+/* Apple button */
+#Apple {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+#Apple:hover {
+    background-color: #f7f7f7;
+    border-color: #bbb;
+}
+
+/* Create account button */
+#createacct {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    width: 300px; /* Ensure the same width as other buttons */
+    margin: 10px 0; /* Consistent margin */
+}
+
+#createacct:hover {
+    background-color: #1a8cff;
+}
+
+/* Sign in button */
+#signin {
+    color: dodgerblue;
+    background-color: transparent;
+    border: 1px solid dodgerblue;
+}
+
+#signin:hover {
+    background-color: rgba(30, 144, 255, 0.1);
+}
+
+/* Button text and image alignment */
+.button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .img {
+    margin-right: 10px;
+}
+
+.button .text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Go {
+    display: inline-flex;
+    align-items: center;
+}
+
+.mainn {
+    margin: 8px;
+}
+
+.butt {
+    margin: 8px;
+}
+
+#or {
+    color: gray;
+}
+
+.line {
+    display: inline-block;
+    margin: 4px;
+    width: 127px;
+    border: 0.5px solid gray;
+}
+
+.para {
+    height: 100%;
+    width: 60%;
+    font-size: small;
+    margin: 17px;
+    margin-top: 12px;
+    color: gray;
+}
+.para a {
+    color: deepskyblue;
+}
+
+main h3 {
+    margin: 20px;
+    margin-top: 40px;
+    font-size: large;
+    font-weight: 500;
+    font-family: "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    margin: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+.links a {
+    padding: 6px;
+    font-size: 13px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#copyright {
+    padding: 8px;
+    font-size: 13px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#signin {
+    color: dodgerblue;
+    background-color: transparent;
+    border: 0.5px solid dodgerblue;
+}
+
+.Xcorp {
+        cursor: default;
+}
