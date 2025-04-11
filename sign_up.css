@@ -19,6 +19,10 @@ html {
     color: white;
 }
 
+.bird {
+    height: 600px;
+}
+
 .image {
     display: flex;
     justify-content: center;
@@ -118,7 +122,7 @@ button {
 
 /* Create account button */
 #createacct {
-    background-color: dodgerblue;
+    background-color: green;
     color: white;
     border: none;
     width: 300px; /* Ensure the same width as other buttons */
@@ -126,14 +130,14 @@ button {
 }
 
 #createacct:hover {
-    background-color: #1a8cff;
+    background-color: green;
 }
 
 /* Sign in button */
 #signin {
-    color: dodgerblue;
+    color: green;
     background-color: transparent;
-    border: 1px solid dodgerblue;
+    border: 1px solid green;
 }
 
 #signin:hover {
@@ -189,7 +193,7 @@ button {
     color: gray;
 }
 .para a {
-    color: deepskyblue;
+    color: green;
 }
 
 main h3 {
@@ -231,11 +235,12 @@ footer {
 }
 
 #signin {
-    color: dodgerblue;
+    color: green;
     background-color: transparent;
-    border: 0.5px solid dodgerblue;
+    border: 0.5px solid green;
 }
 
 .Xcorp {
         cursor: default;
 }
+
