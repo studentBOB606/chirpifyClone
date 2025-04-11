@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>X. It's what's happening / X</title>
     <link rel="stylesheet" href="../CSS/sign_up.css">
-    <link rel="icon" type="image/x-icon" href="https://admin.itsnicethat.com/images/MEPeS1j8IRTti1OF_E9ajuZSAJw=/243516/width-1440/twitter-x-logo-graphic-design-itsnicethat-01.jpeg">
+    <link rel="icon" type="image/x-icon" href="chirpifylogo.png">
     <script src="../javascript/sign_up.js"></script>
 </head>
 <body>
@@ -13,30 +13,60 @@
 <div class="container">
     <div class="image">
         <img class="bird" src="chirpifylogo.png">
-        </svg>
     </div>
     <main>
         <h1>Happening now</h1>
         <h2>Join today.</h2>
-    <div class="side">
-        <button id="Google" class="goo">
-            <span class="img"><img src="google.png" alt="This is an image."></span>
-            <span class="text">Sign up with Google</span>
-        </button>
-    </div>
-    <button id="Apple">
-        <span class="img"><img src="apple.png" alt="This is an image."></span>
-        <span class="text">Sign up with Apple</span>
-    </button>
 
-        <div class="mainn">
-            <span> <hr class="line"> </span>
-            <span>or</span>
-            <span> <hr class="line"> </span>
-        </div>
+
+        <style>
+            .hidden { display: none; }
+            .form-container {
+                width: 300px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                background: black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 8px;
+            }
+            .form-container input, .form-container button {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+                padding: 8px;
+            }
+        </style>
+        </head>
+        <body>
+
         <div class="side">
             <button id="createacct">Create account</button>
         </div>
+
+        <div id="registerForm" class="form-container hidden">
+            <h3>Register</h3>
+            <form id="register" action="register.php" method="post">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Sign Up" name=submit" id="submit">
+                <input type="close" value="Close" name=close" id="closeForm">
+            </form>
+        </div>
+
+        <script>
+            document.getElementById("createacct").addEventListener("click", function() {
+                document.getElementById("registerForm").classList.remove("hidden");
+            });
+
+            document.getElementById("closeForm").addEventListener("click", function() {
+                document.getElementById("registerForm").classList.add("hidden");
+            });
+        </script>
 
         <p class="para"> By signing up, you agree to the <a target="_blank" href="https://x.com/en/tos">Terms of Service</a>
             and <a target="_blank" href="https://x.com/en/privacy">Privacy Policy</a>,
@@ -45,11 +75,32 @@
 
         <h3>Already have an account?</h3>
         <div class="alreadyacct">
-            <button id="signin">Sign in</button>
+            <button id="alreadyacct">Log In</button>
         </div>
 
+        <div id="registerForm2" class="form-container hidden">
+        <form id="login" action="login.php" method="post">
+            <input type="text" id="username2" name="username2" placeholder="Username" required>
+            <input type="password" id="password2" name="password2" placeholder="Password" required>
+            <input type="submit" value="Sign Up" name=submit" id="submit">
+            <input type="close" value="Close" name=close" id="closeForm2">
+        </form>
+        </div>
+
+        <script>
+            document.getElementById("alreadyacct").addEventListener("click", function() {
+                document.getElementById("registerForm2").classList.remove("hidden");
+            });
+
+            document.getElementById("closeForm2").addEventListener("click", function() {
+                document.getElementById("registerForm2").classList.add("hidden");
+            });
+        </script>
+
+        </body>
     </main>
 </div>
+
 
 <footer>
     <div class="links">
