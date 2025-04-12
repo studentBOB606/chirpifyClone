@@ -83,7 +83,7 @@ button {
     height: 40px;
     width: 300px;
     border-radius: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -243,4 +243,5 @@ footer {
 .Xcorp {
         cursor: default;
 }
+
 

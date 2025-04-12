@@ -1,79 +1,247 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>X. It's what's happening / X</title>
-    <link rel="stylesheet" href="../CSS/sign_up.css">
-    <link rel="icon" type="image/x-icon" href="https://admin.itsnicethat.com/images/MEPeS1j8IRTti1OF_E9ajuZSAJw=/243516/width-1440/twitter-x-logo-graphic-design-itsnicethat-01.jpeg">
-    <script src="../javascript/sign_up.js"></script>
-</head>
-<body>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.bird {
+    height: 600px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+
+.image svg {
+    height: 70%;
+    width: 45%;
+}
+
+main {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+main h1 {
+    margin-top: 3rem;
+    padding: 0.9rem;
+    font-size:400%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main h2 {
+    margin-top: 3rem;
+    padding: 0.9rem;
+    font-size:170%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+    margin: 5px;
+    padding: 20px;
+}
+
+.img img {
+    height: 20px;
+    width: 20px;
+}
+
+.goo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
-<div class="container">
-    <div class="image">
-        <img class="bird" src="chirpifylogo.png">
-        </svg>
-    </div>
-    <main>
-        <h1>Happening now</h1>
-        <h2>Join today.</h2>
-    <div class="side">
-        <button id="Google" class="goo">
-            <span class="img"><img src="google.png" alt="This is an image."></span>
-            <span class="text">Sign up with Google</span>
-        </button>
-    </div>
-    <button id="Apple">
-        <span class="img"><img src="apple.png" alt="This is an image."></span>
-        <span class="text">Sign up with Apple</span>
-    </button>
+/* General button styles */
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
 
-        <div class="mainn">
-            <span> <hr class="line"> </span>
-            <span>or</span>
-            <span> <hr class="line"> </span>
-        </div>
-        <div class="side">
-            <button id="createacct">Create account</button>
-        </div>
+/* Google button */
+#Google {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
 
-        <p class="para"> By signing up, you agree to the <a target="_blank" href="https://x.com/en/tos">Terms of Service</a>
-            and <a target="_blank" href="https://x.com/en/privacy">Privacy Policy</a>,
-            including <a target="_blank" href="https://help.x.com/en/rules-and-policies/x-cookies">Cookie Use.</a>
-        </p>
+#Google:hover {
+    background-color: #f7f7f7;
+    border-color: #bbb;
+}
 
-        <h3>Already have an account?</h3>
-        <div class="alreadyacct">
-            <button id="signin">Sign in</button>
-        </div>
+/* Apple button */
+#Apple {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
 
-    </main>
-</div>
+#Apple:hover {
+    background-color: #f7f7f7;
+    border-color: #bbb;
+}
 
-<footer>
-    <div class="links">
-        <a href="https://about.x.com/en">About</a>
-        <a href="https://help.x.com/en/using-x/download-the-x-app">Download the X app</a>
-        <a href="https://help.x.com/en">Help Center</a>
-        <a href="https://x.com/en/tos">Terms of Services</a>
-        <a href="https://x.com/en/privacy">Privacy Policy</a>
-        <a href="https://help.x.com/en/rules-and-policies/x-cookies">Cookies Policy</a>
-        <a href="https://help.x.com/en/resources/accessibility">Accessibility</a>
-        <a href="https://business.x.com/en/help/troubleshooting/how-x-ads-work">Ads info</a>
-        <a href="https://blog.x.com/">Blog</a>
-        <a href="https://careers.x.com/en">Careers</a>
-        <a href="https://about.x.com/en/who-we-are/brand-toolkit">Brand Resources</a>
-        <a href="https://x.com/settings/account/personalization">Advertising</a>
-        <a href="https://business.x.com/en">Marketing</a>
-        <a href="https://business.x.com/en?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness">X for Business</a>
-        <a href="https://developer.x.com/en">Developers</a>
-        <a href="https://x.com/i/directory/profiles">Directory</a>
-        <a href="https://x.com/settings/account/personalization">Settings</a>
-        <a href="#" class="Xcorp">@ 2025 X Corp.</a>
-        <span id="copyright"></span>
-    </div>
-</footer>
+/* Create account button */
+#createacct {
+    background-color: green;
+    color: white;
+    border: none;
+    width: 300px; /* Ensure the same width as other buttons */
+    margin: 10px 0; /* Consistent margin */
+}
 
-</body>
-</html>
+#createacct:hover {
+    background-color: green;
+}
+
+/* Sign in button */
+#signin {
+    color: green;
+    background-color: transparent;
+    border: 1px solid green;
+}
+
+#signin:hover {
+    background-color: rgba(30, 144, 255, 0.1);
+}
+
+/* Button text and image alignment */
+.button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .img {
+    margin-right: 10px;
+}
+
+.button .text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Go {
+    display: inline-flex;
+    align-items: center;
+}
+
+.mainn {
+    margin: 8px;
+}
+
+.butt {
+    margin: 8px;
+}
+
+#or {
+    color: gray;
+}
+
+.line {
+    display: inline-block;
+    margin: 4px;
+    width: 127px;
+    border: 0.5px solid gray;
+}
+
+.para {
+    height: 100%;
+    width: 60%;
+    font-size: small;
+    margin: 17px;
+    margin-top: 12px;
+    color: gray;
+}
+.para a {
+    color: green;
+}
+
+main h3 {
+    margin: 20px;
+    margin-top: 40px;
+    font-size: large;
+    font-weight: 500;
+    font-family: "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    margin: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+.links a {
+    padding: 6px;
+    font-size: 13px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#copyright {
+    padding: 8px;
+    font-size: 13px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#signin {
+    color: green;
+    background-color: transparent;
+    border: 0.5px solid green;
+}
+
+.Xcorp {
+        cursor: default;
+}
+
+

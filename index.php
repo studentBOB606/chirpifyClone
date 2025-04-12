@@ -1,4 +1,6 @@
 <?php
+
+include("db.php");
 $postsFile = "posts.txt";
 session_start();
 if (!isset($_SESSION['username'])) {
@@ -90,6 +92,9 @@ if (file_exists($postsFile)) {
     <link rel="icon" type="image/x-icon" href="logochirp.png">
 </head>
 <body>
+
+
+
 <div class="ChirpyText">
     <h1>📝 POST</h1>
     <form method="POST" class="post-form">
